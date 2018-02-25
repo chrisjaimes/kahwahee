@@ -19,7 +19,7 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.qtc.kahwahee"
+      "PACKAGE_NAME": "com.kahwahee"
     }
   },
   "dependent_plugins": {},

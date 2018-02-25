@@ -21,7 +21,7 @@ git clone git@github.com:queue-tea-cup/kahwahee.git
 Use the [cordova cli](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html) to run android or browser in main directory:
 
 ```bash
-cordova run android
+cordova run android -- --lr
    "     "  browser
 ```
 
