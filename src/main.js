@@ -27,6 +27,8 @@ import App from './main.vue'
 // Init F7 Vue Plugin
 Vue.use(Framework7Vue)
 
+Vue.use(Framework7);
+
 // Init App
 new Vue({
   el: '#app',
