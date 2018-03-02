@@ -31,11 +31,37 @@
 														</ul>
 													</div>
 												</div>
+												
 											</div>
 										</div>
-										<div class="swipeout-actions-left">
+										<div class="swipeout-actions-right">
 											<a href="#" class="swipeout-delete swipeout-overswipe">Delete</a>
 										</div>
+										
+									</li>
+									<li class="swipeout" id="order">
+										<div class = "swipeout-content">
+											<div class="item-content">
+												<div class="item-inner" id="order">
+													<div class="item-title-row">
+														<div class="item-title">Kiwi Pop</div>
+													</div>
+													<div class="item-subtitle order-specifications">
+														<ul>
+															<li>kahwahee
+
+															</li>
+															<li>Potato</li>
+														</ul>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+										<div class="swipeout-actions-right">
+											<a href="#" class="swipeout-delete swipeout-overswipe">Delete</a>
+										</div>
+										
 									</li>
 								</ul>
 							</div>
@@ -59,9 +85,19 @@
 	border-style: solid;
 }
 
+.item-subtitle {
+    font-size: 15px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+
 .order-specifications {
+	padding-left: 25%;
 	padding-right: 35%;
-	/* margin: 0 auto; */
+	text-align:left;
 }
 
 .page {
