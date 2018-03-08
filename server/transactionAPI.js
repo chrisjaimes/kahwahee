@@ -7,8 +7,8 @@ oauth2.accessToken = "sq0atp-bYUJlthiPglnw9M_6x1Hiw";
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-//locationID should be changed to Pop Parlour's ID
-// String | The ID of the location to list transactions for.
+//this is the location id of the Square App I created for testing, 
+//but should be location ID of Pop Parlour Square App
 var locationId = "0CBXVKTXNKCD1"; 
 
 var transaction_queue = [];
@@ -42,7 +42,7 @@ function getLastTransaction() {
 
         //if last transaction received doesn't have the same id than the last transaction in queue, then add a new transaction to queue
         if(last_transaction_id !== last_transaction_in_queue) {
-            console.log('new transaction...'); //for debuggin purposes..
+            console.log('new transaction...'); //for debugging purposes..
             var json = transactionToJSON(data.transactions[0]);
             transaction_queue.push(json);
             console.log(transaction_queue);
