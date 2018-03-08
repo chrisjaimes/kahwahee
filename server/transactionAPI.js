@@ -7,9 +7,9 @@ oauth2.accessToken = "sq0atp-bYUJlthiPglnw9M_6x1Hiw";
 
 var apiInstance = new SquareConnect.TransactionsApi();
 
-//this is the location id of the Square App I created for testing, 
-//but should be location ID of Pop Parlour Square App
-var locationId = "0CBXVKTXNKCD1"; 
+//this is the location id of the SquareApp I created for generating transactions
+//and testing, but should be location ID of Pop Parlour Square App
+var locationId = "0CBXVKTXNKCD1";
 
 var transaction_queue = [];
 var opts; // required parameter to list transactions with Square TransactionsApi
@@ -26,7 +26,7 @@ function getAllTransactions(beginTime, callback) {
     });
 }
 
-//populateQueue gets called once to fill the transaction queue. 
+//populateQueue gets called once to fill the transaction queue.
 function populateQueue(list) {
     for(var i = 0; i < list.length; i++) {
         var transaction_json = transactionToJSON(list[i]);
@@ -50,7 +50,7 @@ function getLastTransaction() {
             //console.log('no new transaction...');
         }
       }, function(error) {
-        console.error(error); 
+        console.error(error);
       });
 }
 
